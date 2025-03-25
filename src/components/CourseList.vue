@@ -25,7 +25,7 @@ export default {
         <CourseTag :id-couse-tag="curso.id"
             v-for="curso in listaCursos"
             :key="curso.id"
-            :image="`https://i.pinimg.com/736x/65/00/15/650015861555389db8196b4deac90ac6.jpg`"
+            :image="curso.image"
             :name="curso.name"
             :describe="curso.describe"
             :emailAccount="curso.emailAccount"
