@@ -42,7 +42,7 @@ export default {
 </script>
 
 <template>
-  <section class="course-card">
+  <section class="courseCard">
     <img :src="image" alt="thumb do curso">
     <hr>
     <h1>{{ name }}</h1>
@@ -77,14 +77,14 @@ hr{
   width: 100%;
 }
 
-.course-card {
+.courseCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgb(65, 69, 71);
   padding: 20px;
   height: auto;
-  width: 100%;
+  width: 40vh;
   max-width: 300px;
   border-radius: 15px;
   justify-content: space-between;
@@ -93,7 +93,7 @@ hr{
   transition: transform 0.3s ease-in-out;
 }
 
-.course-card:hover {
+.courseCard:hover {
   transform: scale(1.05);
 }
 
@@ -107,6 +107,7 @@ img {
 
 .account-data {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
