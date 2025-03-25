@@ -6,9 +6,9 @@ import ToAddCourse from './components/ToAddCourse.vue';
 
 
 const routes = [
-  { path: '/', component: RegisterUser },
-  { path: '/home', component: CourseList },
-  { path: '/home/addCourse', component: ToAddCourse }
+  { path: 'https://frontendvue-gwlz.onrender.com/', component: RegisterUser },
+  { path: 'https://frontendvue-gwlz.onrender.com/home', component: CourseList },
+  { path: 'https://frontendvue-gwlz.onrender.com/home/addCourse', component: ToAddCourse }
 ];
 
 const router = createRouter({
