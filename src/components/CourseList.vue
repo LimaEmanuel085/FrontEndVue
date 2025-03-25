@@ -10,7 +10,7 @@ export default {
         };
     },
     async created() {
-        let response = await api.get('http://localhost:3000/home');
+        let response = await api.get('https://backendcastrocursos.onrender.com/home');
         this.listaCursos = response.data;
     },
     components: { CourseTag, AddCourseButton },

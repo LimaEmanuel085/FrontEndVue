@@ -3,7 +3,7 @@ import api from "../service/api";
 export default {
   methods: {
     async postUser() {
-      await api.post("http://localhost:3000/", {
+      await api.post("https://backendcastrocursos.onrender.com/", {
         name: this.name,
         email: this.email,
         password: this.password,
