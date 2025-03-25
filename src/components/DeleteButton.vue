@@ -7,7 +7,7 @@ export default {
   methods: {
     async deleteCourse(id) {
       await api.delete(`/home/${id}`);
-      location.reload()
+      this.$router.push("/home");
     },
     
   },
