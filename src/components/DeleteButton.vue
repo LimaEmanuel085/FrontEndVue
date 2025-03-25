@@ -5,9 +5,9 @@ export default {
     return {};
   },
   methods: {
-    async deleteCourse(id) {
+    async goDeletePage(id) {
       await api.delete(`/home/${id}`);
-      this.$router.push("/home");
+      this.$router.push("/home/deletePage");
     },
     
   },
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <button @click="deleteCourse(idCourse)">
+  <button @click="goDeletePage(idCourse)">
     <img
       width="50"
       height="50"
