@@ -7,8 +7,8 @@ import ToAddCourse from './components/ToAddCourse.vue';
 
 const routes = [
   { path: '/', component: RegisterUser },
-  { path: '', component: CourseList },
-  { path: '', component: ToAddCourse }
+  { path: '/home', component: CourseList },
+  { path: '/home/addCourse', component: ToAddCourse }
 ];
 
 const router = createRouter({
